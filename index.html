@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plataforma de Solicitações e Indicadores</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonte -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+  <!-- HEADER -->
+  <header class="bg-slate-900 text-white py-4 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <!-- LOGO -->
+        <img
+          src="img/logo_2.png"
+          alt="Logo da Plataforma de Solicitações"
+          class="w-16 h-16 rounded-md object-cover shadow-md"
+        />
+        <div>
+          <h1 class="text-lg md:text-xl font-semibold tracking-tight">
+            Plataforma de Solicitações e Indicadores
+          </h1>
+          <p class="text-xs md:text-sm text-slate-300">
+            Centralização de demandas e dados de automação
+          </p>
+        </div>
+      </div>
+
+      <!-- Simulação de usuário logado -->
+      <div class="hidden md:flex items-center gap-3 text-sm">
+        <span class="text-slate-300">João Victor</span>
+        <div
+          class="w-9 h-9 rounded-full bg-slate-700 flex items-center justify-center text-xs font-semibold"
+        >
+          JV
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="max-w-6xl mx-auto px-4 py-10">
+    <!-- HERO / RESUMO -->
+    <section
+      class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 md:p-8 mb-10"
+    >
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-semibold text-slate-900 mb-3">
+            Centralize solicitações e acompanhe indicadores em um só lugar
+          </h2>
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed mb-6">
+            A plataforma permite registrar, priorizar e acompanhar solicitações
+            relacionadas às automações corporativas, além de consolidar
+            indicadores financeiros e operacionais. Tudo em uma interface
+            simples, responsiva e voltada ao ambiente interno da organização.
+          </p>
+
+          <div class="flex flex-wrap gap-3">
+            <a
+              href="#acoes-rapidas"
+              class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-medium bg-blue-600 text-white hover:bg-blue-700 shadow-sm transition-transform duration-200 hover:-translate-y-0.5"
+            >
+              Nova solicitação
+            </a>
+            <a
+              href="#indicadores"
+              class="inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-medium border border-slate-300 text-slate-700 hover:bg-slate-50 transition-transform duration-200 hover:-translate-y-0.5"
+            >
+              Ver indicadores
+            </a>
+          </div>
+        </div>
+
+        <!-- IMAGEM / ILUSTRAÇÃO (pode trocar por um dashboard real ou ilustrativo) -->
+        <div class="relative">
+          <div
+            class="rounded-xl bg-slate-900 text-slate-50 p-5 shadow-xl border border-slate-700"
+          >
+            <p class="text-xs text-slate-300 mb-3">
+              Visão geral das solicitações
+            </p>
+
+            <div class="grid grid-cols-3 gap-3 mb-4 text-center text-xs">
+              <div class="bg-slate-800 rounded-lg p-3">
+                <p class="text-slate-300">Abertas</p>
+                <p class="text-xl font-semibold mt-1 text-amber-300">12</p>
+              </div>
+              <div class="bg-slate-800 rounded-lg p-3">
+                <p class="text-slate-300">Em andamento</p>
+                <p class="text-xl font-semibold mt-1 text-sky-300">5</p>
+              </div>
+              <div class="bg-slate-800 rounded-lg p-3">
+                <p class="text-slate-300">Concluídas</p>
+                <p class="text-xl font-semibold mt-1 text-emerald-300">28</p>
+              </div>
+            </div>
+
+            <!-- “Gráfico” simples usando barras -->
+            <p class="text-xs text-slate-300 mb-2">
+              Economia estimada pelas automações (R$)
+            </p>
+            <div class="space-y-1.5 text-xs">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">Último mês</span>
+                <span class="font-medium">13.000</span>
+              </div>
+              <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                <div class="h-full w-4/5 bg-emerald-400"></div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <span class="text-slate-300">Meta trimestral</span>
+                <span class="font-medium">35.000</span>
+              </div>
+              <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                <div class="h-full w-2/3 bg-sky-400"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AÇÕES RÁPIDAS -->
+    <section id="acoes-rapidas" class="mb-10">
+      <h3 class="text-lg md:text-xl font-semibold text-slate-900 mb-4">
+        Ações principais
+      </h3>
+
+      <div class="grid md:grid-cols-3 gap-4">
+        <!-- Card 1 -->
+        <div
+          class="bg-white border border-slate-100 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow duration-200"
+        >
+          <p class="text-xs font-medium text-slate-500 mb-1">
+            Registro de demandas
+          </p>
+          <h4 class="text-sm md:text-base font-semibold text-slate-900 mb-2">
+            Nova solicitação
+          </h4>
+          <p class="text-xs md:text-sm text-slate-600 mb-4">
+            Cadastrar bugs, melhorias ou novas automações em um único canal,
+            com categoria, prioridade e setor de origem.
+          </p>
+          <button
+            class="inline-flex items-center text-xs md:text-sm font-medium text-blue-600 hover:text-blue-700"
+          >
+            Abrir formulário
+          </button>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white border border-slate-100 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow duration-200"
+        >
+          <p class="text-xs font-medium text-slate-500 mb-1">
+            Acompanhamento
+          </p>
+          <h4 class="text-sm md:text-base font-semibold text-slate-900 mb-2">
+            Consultar solicitações
+          </h4>
+          <p class="text-xs md:text-sm text-slate-600 mb-4">
+            Visualizar o status das demandas (abertas, em andamento,
+            concluídas) e acompanhar o histórico de atendimento.
+          </p>
+          <button
+            class="inline-flex items-center text-xs md:text-sm font-medium text-blue-600 hover:text-blue-700"
+          >
+            Ver painel de solicitações
+          </button>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white border border-slate-100 rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow duration-200"
+        >
+          <p class="text-xs font-medium text-slate-500 mb-1">
+            Indicadores e relatórios
+          </p>
+          <h4 class="text-sm md:text-base font-semibold text-slate-900 mb-2">
+            Dashboards de automação
+          </h4>
+          <p class="text-xs md:text-sm text-slate-600 mb-4">
+            Acompanhar indicadores de volume de demandas, SLAs e economia
+            gerada pelas automações desenvolvidas.
+          </p>
+          <button
+            class="inline-flex items-center text-xs md:text-sm font-medium text-blue-600 hover:text-blue-700"
+          >
+            Acessar indicadores
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDICADORES GERAIS -->
+    <section id="indicadores" class="mb-10">
+      <h3 class="text-lg md:text-xl font-semibold text-slate-900 mb-4">
+        Indicadores resumidos
+      </h3>
+
+      <div class="grid md:grid-cols-4 gap-4">
+        <div
+          class="bg-white border border-slate-100 rounded-xl p-4 text-center shadow-sm"
+        >
+          <p class="text-xs text-slate-500 mb-1">Demandas totais</p>
+          <p class="text-2xl font-semibold text-slate-900">45</p>
+        </div>
+        <div
+          class="bg-white border border-slate-100 rounded-xl p-4 text-center shadow-sm"
+        >
+          <p class="text-xs text-slate-500 mb-1">Tempo médio de resposta</p>
+          <p class="text-2xl font-semibold text-slate-900">3d</p>
+        </div>
+        <div
+          class="bg-white border border-slate-100 rounded-xl p-4 text-center shadow-sm"
+        >
+          <p class="text-xs text-slate-500 mb-1">Economia estimada</p>
+          <p class="text-2xl font-semibold text-slate-900">R$ 13 mil</p>
+        </div>
+        <div
+          class="bg-white border border-slate-100 rounded-xl p-4 text-center shadow-sm"
+        >
+          <p class="text-xs text-slate-500 mb-1">Satisfação interna</p>
+          <p class="text-2xl font-semibold text-slate-900">92%</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA -->
+    <section class="mb-12">
+      <h3 class="text-lg md:text-xl font-semibold text-slate-900 mb-4">
+        Fluxo básico de uso da plataforma
+      </h3>
+
+      <div class="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+        <ol class="list-decimal list-inside text-sm md:text-base text-slate-700 space-y-2">
+          <li>O colaborador registra uma nova solicitação na plataforma.</li>
+          <li>A equipe de inovação avalia, categoriza e define a prioridade.</li>
+          <li>A demanda é tratada e tem seu status atualizado no sistema.</li>
+          <li>Os indicadores de volume e economia são atualizados.</li>
+          <li>Gestores acompanham relatórios e dashboards em tempo real.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-300 text-center text-xs py-4 mt-6">
+    Plataforma de Solicitações e Indicadores &mdash; Projeto Integrador II ·
+    UFMS Digital · 2025
+  </footer>
+</body>
+</html>
